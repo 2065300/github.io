@@ -1,5 +1,6 @@
 ---
 permalink: /
 redirect_to:
-  - https://example.com/home.html
+  - https://milankrukel/home.html
 ---
+redirect_http_code: 301
