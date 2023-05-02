@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico" />
+    <meta
+      name="description"
+      content="Hey! Mijn naam is Milan en dit is mijn persoonlijke website, alles
+    over mij en de dingen waar ik gepassioneerd over ben. Ik zal deze
+    ruimte gebruiken om mijn gedachten, interesses en projecten met de
+    wereld te delen."
+    />
+    <link rel="stylesheet" href="CSS\StylesV1.1.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Milan Krükel</a>
+        </div>
+        <ul class="links">
+          <li><a href="/home">Home</a></li>
+          <li class="hobbylinks">
+            <a href="./hobby">Hobby's</a>
+
+            <ul class="hobbydropdown">
+              <li><a href="./photography">Fotografie</a></li>
+              <li><a href="/ukelele">Ukelele</a></li>
+              <li><a href="/piano">Piano</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/projectpage">Projecten</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+        </ul>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="/home">Home</a></li>
+        <li>
+          <a class="dropdown_home_styling" href="./hobby">Hobby's</a>
+          <ul class="hobbydropdownsmall">
+            <li><a href="./photography">Fotografie</a></li>
+            <li><a href="/ukelele">Ukelele</a></li>
+            <li><a href="/piano">Piano</a></li>
+          </ul>
+        </li>
+        <li><a href="/projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">contact</a></li>
+      </div>
+      <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropdown_menu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          dropdown_menu.classList.toggle("open");
+          const isopen = dropdown_menu.classList.contains("open");
+          toggleBtnIcon.classList = isopen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+      </script>
+    </header>
+
+    <div class="front">
+      <div class="profile">
+        <img
+          class="profilefoto"
+          src="./Img/profielfoto's/foto1.jpg"
+          alt="Profile"
+        />
+        <div class="welkomstbericht">
+          <p>
+            Hey! Mijn naam is Milan en dit is mijn persoonlijke website, alles
+            over mij en de dingen waar ik gepassioneerd over ben. Ik zal deze
+            ruimte gebruiken om mijn gedachten, interesses en projecten met de
+            wereld te delen.
+          </p>
+          <p class="p2">
+            Van fotografie tot IT-infrastructuur, ik heb veel spannende dingen
+            om met je te delen. Of je nu voor het eerst mijn pagina bekijkt of
+            al een tijdje volgt, ik hoop dat je iets vindt dat je interesseert.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <!-- pagewrapper-->
+      <div class="page-wrapper">
+        <!-- postslider-->
+        <div class="post-slider">
+          <h1 class="slider-title">Recente artikelen</h1>
+          <i class="fas fa-chevron-left prev"></i>
+          <i class="fas fa-chevron-right next"></i>
+
+          <div class="post-wrapper">
+            <!--change the src. href, name and date in this post div-->
+            <div class="post">
+              <a href="photo?id=2">
+                <img
+                  src="./Img/horizontalphotos/Queen Endgame_1-croppedjpg.jpg"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4><a href="photo?id=2">De val van de koningin</a></h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>8-03-23</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--change the src. href, name and date in this post div-->
+            <div class="postvertical">
+              <a href="photo?id=18">
+                <img
+                  src="./Img/verticalphotos/Lost-Girl.jpg"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4>
+                    <a href="photo?id=18">Eenzaamheid in de velden</a>
+                  </h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>20-03-23</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="post">
+              <a href="photo?id=5">
+                <img
+                  src="./Img/horizontalphotos/Sunset-cropped.jpg"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4><a href="photo?id=5">De rook van herinnering</a></h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>20-03-23</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="post">
+              <a href="./projecten/project1">
+                <img
+                  src="./Img/projecten/project1/1.jpg"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4>
+                    <a href="./projecten/project1"
+                      >De initïele opzet van de linux server</a
+                    >
+                  </h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>20-03-2023</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="post">
+              <a href="./photo?id=6">
+                <img
+                  src="./Img/horizontalphotos/a-new-beginning-cropped.jpg"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4>
+                    <a href="./photo?id=6">A new beginning</a>
+                  </h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>20-03-2023</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="post">
+              <a href="./projecten/project2.html">
+                <img
+                  src="./Img/projecten/project2/2023-03-08 15_32_36-nav bar.png"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4>
+                    <a href="./projecten/project2.html"
+                      >De bouw van de website!</a
+                    >
+                  </h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>20-03-2023</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="post">
+              <a href="./projecten/project3.html">
+                <img
+                  src="./Img/projecten/project3/logoapp.png"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4>
+                    <a href="./projecten/project3.html">Schuifjeaan?</a>
+                  </h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>17-04-2023</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="postvertical">
+              <a href="photo?id=16">
+                <img
+                  src="./Img/verticalphotos/vergeten-heiligdom.jpg"
+                  alt=""
+                  class="slider-image"
+                />
+                <div class="post-info">
+                  <h4><a href="photo?id=16">Vergeten heiligdom</a></h4>
+                  <div class="extrainfo">
+                    <i class="far fa-user"></i>
+                    <h5>Milan Krükel</h5>
+                    <i class="far fa-calendar cal"></i>
+                    <h5>18-03-2023</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pagewrapper-->
+    </div>
+    <!-- jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- slick carousel-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="JSS/script.js"></script>
+
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <ul class="social_icons">
+        <li>
+          <a href="https://www.instagram.com/milankrukel/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/milan.krukel/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/milan-kr%C3%BCkel-331018213/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@Longboardingdude3956"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+      </ul>
+
+      <ul class="linksfooter">
+        <li><a href="./home">Home</a></li>
+        <li><a href="./hobby">Hobby's</a></li>
+        <li><a href="./projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+      </ul>
+      <p>2023 | Milan Krükel all rights Reserved</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
