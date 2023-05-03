@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/ukeleleV1.1.css" />
+    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ukelele</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Milan Krükel</a>
+        </div>
+        <ul class="links">
+          <li><a href="/home">Home</a></li>
+          <li class="hobbylinks">
+            <a href="./hobby">Hobby's x</a>
+
+            <ul class="hobbydropdown">
+              <li><a href="./photography">Fotografie</a></li>
+              <li><a href="/ukelele">Ukelele</a></li>
+              <li><a href="/piano">Piano</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/projectpage">Projecten</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="./contact">contact</a></li>
+        </ul>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="/home">Home</a></li>
+        <li>
+          <a class="dropdown_home_styling" href="./hobby">Hobby's</a>
+          <ul class="hobbydropdownsmall">
+            <li><a href="./photography">Fotografie</a></li>
+            <li><a href="/ukelele">Ukelele</a></li>
+            <li><a href="/piano">Piano</a></li>
+          </ul>
+        </li>
+        <li><a href="/projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="./contact">contact</a></li>
+      </div>
+      <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropdown_menu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          dropdown_menu.classList.toggle("open");
+          const isopen = dropdown_menu.classList.contains("open");
+          toggleBtnIcon.classList = isopen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+      </script>
+    </header>
+    <div class="front">
+      <div class="title">
+        <h1>Ukelele</h1>
+      </div>
+      <div class="tekst">
+        <p>
+          Welkom op mijn ukelelepagina! Hier vind je een verzameling van al mijn
+          ukelelevideo's. Begin april 2020 ben ik begonnen met het bespelen van
+          de ukelele. Het leek me altijd geweldig om ukelele te kunnen spelen,
+          simpelweg omdat het zo'n schattig instrument is.<br /><br />
+          Bovendien heeft het maar 4 snaren, hahaha, en het is zeer draagbaar.
+          Ik zie mezelf later echt op een berg in Zwitserland zitten, met de
+          ukelele in mijn handen, en gewoon lekker zitten te viben ;D.
+        </p>
+      </div>
+      <div class="container">
+        <hr />
+        <div class="product">
+          <div class="product-container">
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/i9OwyFwSoOQ"
+                title="Pixies  Where is My Mind   Ukelele cover     9-04-2022"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/CjHCLjePw3M"
+                title="Oasis Wonderwall, Ukelele cover 18-02-2021"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/WvxWG5eXYU8"
+                title="Pumped up Kicks Ukelele cover     3-07-2021"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/WvxWG5eXYU8"
+                title="Pumped up Kicks Ukelele cover     3-07-2021"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/M8rTX0uraHo"
+                title="Imagine Dragons  Radioactive ukelele cover"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/p0HDwgGFwXs"
+                title="Sweet Child o Mine   ukelele cover  5-08-2021"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/AEYKn0wOLK8"
+                title="Stay With me Ukelele cover    13-07-2021"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="473"
+                height="841"
+                src="https://www.youtube.com/embed/JgmDTVe82RE"
+                title="Ukelele cover"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <ul class="social_icons">
+        <li>
+          <a href="https://www.instagram.com/milankrukel/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/milan.krukel/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/milan-kr%C3%BCkel-331018213/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@Longboardingdude3956"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+      </ul>
+
+      <ul class="linksfooter">
+        <li><a href="./home">Home</a></li>
+        <li><a href="./hobby">Hobby's</a></li>
+        <li><a href="./projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="./contact">contact</a></li>
+      </ul>
+      <p>2023 | Milan Krükel all rights Reserved</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

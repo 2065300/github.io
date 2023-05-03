@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/piano.css" />
+    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Piano</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Milan Krükel</a>
+        </div>
+        <ul class="links">
+          <li><a href="/home">Home</a></li>
+          <li class="hobbylinks">
+            <a href="./hobby">Hobby's x</a>
+
+            <ul class="hobbydropdown">
+              <li><a href="./photography">Fotografie</a></li>
+              <li><a href="/ukelele">Ukelele</a></li>
+              <li><a href="/piano">Piano</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/projectpage">Projecten</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+        </ul>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="/home">Home</a></li>
+        <li>
+          <a class="dropdown_home_styling" href="./hobby">Hobby's</a>
+          <ul class="hobbydropdownsmall">
+            <li><a href="./photography">Fotografie</a></li>
+            <li><a href="/ukelele">Ukelele</a></li>
+            <li><a href="/piano">Piano</a></li>
+          </ul>
+        </li>
+        <li><a href="/projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+      </div>
+      <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropdown_menu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          dropdown_menu.classList.toggle("open");
+          const isopen = dropdown_menu.classList.contains("open");
+          toggleBtnIcon.classList = isopen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+      </script>
+    </header>
+
+    <div class="front">
+      <div class="title">
+        <h1>Piano</h1>
+      </div>
+      <div class="tekst">
+        <p>
+          Welkom op mijn pianopagina! Hier vind je een verzameling van al mijn
+          pianovideo's. Mijn reis met de piano begon met het bekijken van
+          video's op YouTube, waar ik leerde spelen door de noten te observeren
+          en ze zelf te repliceren.<br />
+          <br />
+          Hoewel het niet de meest conventionele manier van leren was, kon ik
+          enkele van mijn favoriete liedjes spelen zonder me op theorie te
+          concentreren. Het was een uitdagend maar plezierig proces en ik ben
+          dankbaar voor de vaardigheden die ik heb opgedaan. Hoewel ik sommige
+          van deze nummers in de loop van de tijd misschien ben vergeten, vind
+          ik troost in het feit dat ik ze ooit heb kunnen spelen. Nu kan ik
+          terugkijken naar deze video's en genieten van de herinneringen die ze
+          oproepen.Ik hoop dat je het leuk zult vinden om mijn pianoreis door
+          deze video's te ontdekken!
+        </p>
+      </div>
+
+      <div class="container">
+        <hr />
+        <div class="product">
+          <div class="product-container">
+            <div class="product-item">
+              <iframe
+                width="720"
+                height="410"
+                src="https://www.youtube.com/embed/7VurIngTSFg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="720"
+                height="410"
+                src="https://www.youtube.com/embed/xnuOy1rZNA4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="720"
+                height="410"
+                src="https://www.youtube.com/embed/B2pwiBdXvSg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="product-item">
+              <iframe
+                width="720"
+                height="410"
+                src="https://www.youtube.com/embed/tbzDKD3fUY4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="720"
+                height="410"
+                src="https://www.youtube.com/embed/3Yk6b8Avb-w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="720"
+                height="410"
+                src="https://www.youtube.com/embed/JQIhHfw8taI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="product-item">
+              <iframe
+                width="190"
+                height="340"
+                src="https://www.youtube.com/embed/uRbfG7K4r1Y"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <ul class="social_icons">
+        <li>
+          <a href="https://www.instagram.com/milankrukel/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/milan.krukel/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/milan-kr%C3%BCkel-331018213/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@Longboardingdude3956"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+      </ul>
+
+      <ul class="linksfooter">
+        <li><a href="./home">Home</a></li>
+        <li><a href="./hobby">Hobby's</a></li>
+        <li><a href="./projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+      </ul>
+      <p>2023 | Milan Krükel all rights Reserved</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

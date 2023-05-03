@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/photographyV1.1.css" />
+    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Fotografie</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Milan Krükel</a>
+        </div>
+        <ul class="links">
+          <li><a href="/home">Home</a></li>
+          <li class="hobbylinks">
+            <a href="./hobby">Hobby's</a>
+
+            <ul class="hobbydropdown">
+              <li><a href="/photography">Fotografie</a></li>
+              <li><a href="/ukelele">Ukelele</a></li>
+              <li><a href="/piano">Piano</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/projectpage">Projecten</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+        </ul>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="/home">Home</a></li>
+        <li>
+          <a class="dropdown_home_styling" href="./hobby">Hobby's</a>
+          <ul class="hobbydropdownsmall">
+            <li><a href="/photography">Fotografie</a></li>
+            <li><a href="./ukelele">Ukelele</a></li>
+            <li><a href="/piano">Piano</a></li>
+          </ul>
+        </li>
+        <li><a href="/projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+      </div>
+      <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropdown_menu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+          dropdown_menu.classList.toggle("open");
+          const isopen = dropdown_menu.classList.contains("open");
+          toggleBtnIcon.classList = isopen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+      </script>
+    </header>
+    <div class="front">
+      <div class="title">
+        <h1>Fotografie</h1>
+      </div>
+      <div class="tekst">
+        <p>
+          Welkom op mijn fotografiepagina! Hier kun je alle foto's bekijken die
+          ik heb gemaakt of waarmee ik heb gewerkt, elk met een uniek verhaal
+          geschreven om dieper inzicht en betekenis aan de afbeeldingen te
+          geven. Ik ben gepassioneerd over het presenteren van deze foto's met
+          liefde en zorg, en ik hoop dat u ze met plezier zult ontdekken.
+        </p>
+      </div>
+      <div class="container">
+        <hr />
+        <div class="product">
+          <div class="product-container">
+            <div class="product-item">
+              <div class="product-img">
+                <a id="18" href="photo?id=18"
+                  ><img src="./Img/verticalphotos/Lost-Girl.jpg" alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Eenzaamheid in de velden</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="17" href="photo?id=17"
+                  ><img src="./Img/verticalphotos/FireBender_1.jpg" alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Meester van de vlam</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="16" href="photo?id=16"
+                  ><img
+                    src="./Img/verticalphotos/vergeten-heiligdom.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Vergeten Heiligdom</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="15" href="photo?id=15"
+                  ><img src="./Img/verticalphotos/Wizard-cropped.jpg" alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De toverstokkenmakers reis</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="14" href="photo?id=14"
+                  ><img
+                    src="./Img/verticalphotos/een-krant-lezen-croppedjpg.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Fuck de krant</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="13" href="photo?id=13"
+                  ><img
+                    src="./Img/verticalphotos/tovenares-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De lichtbewaarder</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="12" href="photo?id=12"
+                  ><img src="./Img/verticalphotos/natuur-cropped.jpg" alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De omhelzing van de natuur</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="10" href="photo?id=10"
+                  ><img
+                    src="./Img/verticalphotos/longboard-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De vrijheidsweg</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="11" href="photo?id=11"
+                  ><img
+                    src="./Img/verticalphotos/chillings2_1.0-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De mooiheid van het nu</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="9" href="photo?id=9"
+                  ><img
+                    src="./Img/verticalphotos/0_jesse_1-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Blijf doorgaan</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="7" href="photo?id=7"
+                  ><img
+                    src="./Img/verticalphotos/Straydog-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De hoop van een verdwaalde</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <a id="8" href="photo?id=8"
+                  ><img
+                    src="./Img/verticalphotos/RedPill-BluePill.jpg"
+                    alt="img" /></a
+                >>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Dualiteit van emoties</p>
+              </div>
+            </div>
+            <div class="product-verticalitem">
+              <div class="product-img">
+                <a id="6" href="photo?id=6"
+                  ><img
+                    src="./Img/horizontalphotos/a-new-beginning-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">A new beginning</p>
+              </div>
+            </div>
+            <div class="product-verticalitem">
+              <div class="product-img">
+                <a id="5" href="photo?id=5"
+                  ><img
+                    src="./Img/horizontalphotos/Sunset-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De rook van herinnering</p>
+              </div>
+            </div>
+            <div class="product-verticalitem">
+              <div class="product-img">
+                <a id="4" href="photo?id=4"
+                  ><img
+                    src="./Img/horizontalphotos/JungleBook-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Het verkennen van de wildernis</p>
+              </div>
+            </div>
+            <div class="product-verticalitem">
+              <div class="product-img">
+                <a id="3" href="photo?id=3"
+                  ><img
+                    src="./Img/horizontalphotos/EndofTheHallway.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">End of the hallway</p>
+              </div>
+            </div>
+            <div class="product-verticalitem">
+              <div class="product-img">
+                <a id="2" href="photo?id=2"
+                  ><img
+                    src="./Img/horizontalphotos/Queen Endgame_1-croppedjpg.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">De val van de koning</p>
+              </div>
+            </div>
+            <div class="product-verticalitem">
+              <div class="product-img">
+                <a id="1" href="photo?id=1"
+                  ><img
+                    src="./Img/horizontalphotos/1633988828139-cropped.jpg"
+                    alt="img"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p class="phototitel">Urban Exploration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <ul class="social_icons">
+        <li>
+          <a href="https://www.instagram.com/milankrukel/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/milan.krukel/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/milan-kr%C3%BCkel-331018213/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/@Longboardingdude3956"
+            target="_blank"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+      </ul>
+
+      <ul class="linksfooter">
+        <li><a href="./home">Home</a></li>
+        <li><a href="./hobby">Hobby's</a></li>
+        <li><a href="./projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+      </ul>
+      <p>2023 | Milan Krükel all rights Reserved</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/projecten/project3.css" />
+    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico" />
+    <title>De initïele opzet van de linux server</title>
+  </head>
+  <body>
+    <div class="mainscreen">
+      
+      <div class="content">
+        <img class="logo" src="/Img\projecten\project3\logoapp.png" alt="">
+        <div class="index">
+          <ul>
+            <li><a href="#abstract"> Abstract</a></li>
+            <li><a href="#aanleiding"> Aanleiding</a></li>
+            <li> <a href="#doelstelling">Doelstelling</a></li>
+            <li> <a href="#requirements">Requirements</a></li>
+            <li> <a href="#Realisatie">Realisatie</a></li>
+            <li><a href="#design">Ontwerp</a></li>
+            <li><a href="#evaluatie">Evaluate</a></li>
+            <li><a href="#discussie">Discussie</a></li>
+            <li><a href="#conclusie">Conclusie</a></li>
+            <li><a href="#Referenties">Referenties</a></li>
+            <p>Dit project is samen uitgevoerd met: Beau Janssen, Jos van Schaijk, Aaron Dang en Milan krükel</p>
+
+          </ul>
+        </div>
+        <div class="abstract" id="abstract">
+            <h2>Abstract</h2>
+            <p>voor de minor SDS diende een startupidee uitgewerkt te worden. Er is een schaalbare softwaredienst 
+                ontwikkeld om mensen die elkaar nog niet kennen samen te laten eten. Dit heeft onder andere als doel 
+                om eenzaamheid tegen te gaan. Er zijn fases doorlopen om de doelgroep beter te leren kennen en het 
+                idee verder uit te werken. Daarna heeft requirements engineering plaatsgevonden en zijn er ontwerpen 
+                gemaakt voor het te ontwikkelen artefact. Het MVP (minimum viable product) is gerealiseerd met MVC, 
+                Unity voor de frontend, MS SQL en deployed in Azure Cloud. Ten slotte heeft er requirements testing en 
+                UX testing plaatsgevonden. De kernfunctionaliteit van de applicatie is werkend.</p>
+        </div>
+        <div class="Aanleiding" id="aanleiding">
+          <h2>Aanleiding</h2>
+          <p>
+            Als onderdeel van de minor Software Defined Services aan de Zuyd Hogeschool heeft het projectteam, 
+bestaande uit 4 ICT-studenten, een softwaredienst ontwikkeld. Bij de minor SDS was het de bedoeling 
+om een startupidee te ontwikkelen. Deze startup diende een softwaredienst te ontwikkelen die 
+schaalbaar was. Voor het project was binnen de minor 9 weken tijd beschikbaar. In de eerste week zijn 
+er klassikaal ideeën gegenereerd op basis van beschikbare technologieën en behoeften vanuit de 
+samenleving. Het projectteam heeft gekozen om het idee van de mee-eetapp verder te gaan 
+ontwikkelen. <br><br>
+Het idee van de mee-eetapp was om mensen die elkaar nog niet kennen samen te laten eten. Dit brengt 
+meerdere voordelen met zich mee. Het is een manier om nieuwe mensen te leren kennen en 
+eenzaamheid tegen te gaan. Eenzaamheid is een belangrijk maatschappelijk probleem, uit de 
+gezondheidsmonitor Volwassenen en Ouderen 2020 bleek dat 46,6% van de Nederlandse volwassenen 
+eenzaamheid ervaarde (De Staat van Volksgezondheid en Zorg, 2023). Daarnaast zijn er steeds meer 
+kleine huishoudens en eenpersoonshuishoudens. In 2022 waren er 3,2 miljoen 
+eenpersoonshuishoudens en was de gemiddelde huishoudgrootte naar 2,13 gedaald van 3,53 in 1962. 
+(CBS, 2023) <br><br>
+Beperkte tijd om te koken kan verholpen worden door bij anderen bij een etentje aan te schuiven. Ook 
+leidt het koken voor meerdere personen tot minder verspilling, meer efficiëntie en hiermee een kostenen tijdsbesparing.
+          </p>
+          
+        </div>
+        <div class="doelstelling" id="doelstelling">
+            <h2>Doelstelling</h2>
+            <p>De doelstelling binnen de projecttijd van 10 weken is het bereiken van een MVP (minimum viable 
+                product). Hierbij wordt met design thinking eerst de doelgroep onderzocht en ontwerpen gemaakt. 
+                Vervolgens wordt het MVP gerealiseerd en getest. Met het MVP moeten er etentjes georganiseerd 
+                kunnen worden en moet eraan deelgenomen kunnen worden. Het MVP moet ook schaalbaar 
+                ontwikkeld zijn. <br><br>
+                In één zin: Het ontwikkelen van een softwaredienst die schaalbaar is waardoor mensen samen kunnen 
+                eten met mensen die ze nog niet kennen en hiermee nieuwe contacten te leggen tussen mensen en 
+                eenzaamheid te voorkomen of verhelpen</p>
+        </div>
+       
+        <div class="stap1" id="requirements">
+          <h2 > 
+          </a>Requirements</h2>
+          <p>
+            Toen we onze doelgroep hadden gesteld zijn we gaan nadenken over de requirements van onze applicatie. Dit was een iteratief proces, omdat we later in het project altijd nieuwe inzichten kregen. Daarom werkt de waterval methode ook niet in dit soort projecten. <br><br>
+            Prioritering van de requirements is noodzakelijk omdat het helpt ervoor te zorgen dat de oplossing, voldoet aan de belangrijkste requirements. Bij het prioriteren focus je eerst op de belangrijkste eisen,  waardoor het ontwerpproces effectiever en efficiënter kan worden uitgevoerd. <br><br>
+            Voor het prioriteren van de requirements wordt gebruik gemaakt van de MoSCow methode. Deze methode is gekozen omdat de eisen systematisch gecategoriseerd worden in vier delen: Must have, Should have, Could have en Won’t have. Dit creëert een duidelijk onderscheid en daardoor wordt het in een oogopslag duidelijk hoe belangrijk elke eis is.
+          </p>
+          <h3>De requirements</h3>
+          <img src="/img/projecten/project3/re1.png" alt="">
+         <br>
+         <img src="/img/projecten/project3/re2.png" alt="">
+        </div>
+      
+        <div class="design" id="design">
+            <h2>Ontwerp</h2>
+            <p>We hebben besloten om Unity te gebruiken om het front-end van onze applicatie te ontwikkelen, omdat het een gemakkelijke manier biedt om de gebruikersinterface te creëren. We zullen API's gebruiken om communicatie mogelijk te maken tussen de front-end en back-end, die is geschreven in C#. We gebruiken een SQL-database, die wordt gehost in Azure cloud.  <br><br> We hebben bij het ontwerp ook deskresearch gedaan naar vergelijkbare apps, zo kwamen we tot een aantal functionaliteiten waarvan we dachten dat het ook een goed idee was om deze mee te nemen in ons ontwerp. Bijvoorbeeld de FAQ page en het swipen. <br><br>
+            ook hebben we voor het ontwerpen wireframes gemaakt.
+
+            </p>
+               
+        </div>
+        <div class="realisatie" id="Realisatie">
+            <h2>Realisatie</h2>
+            <p>De volgende zaken zijn gerealiseerd: <br><br>
+                • Er kan een account worden aangemaakt en worden ingelogd; <br>
+                • Er kunnen etentjes worden aangemaakt; <br>
+                • Georganiseerde etentjes kunnen bekeken worden; <br>
+                • Er kan deelgenomen worden aan georganiseerde etentjes; <br>
+                • Een overzicht kan bekeken worden welke etentjes zelf georganiseerd worden; <br>
+                • Een overzicht kan bekeken worden aan welke etentjes deelgenomen wordt; <br>
+                • Profielinformatie kan aangepast worden. <br><br>
+            Hieronder kunt u een video zien waar een korte demo wordt gegeven van het gerealiseerde product.</p> 
+            <br>
+            <div class="product-item">
+                <iframe width="699" height="393" src="https://www.youtube.com/embed/Fyw-BPGOJZk" title="BD07 casusproject: schuifjeaan?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              
+
+           
+        </div>
+        <div class="Evaluate" id="evaluatie">
+            <h2>Evaluate</h2>
+            <p>We hebben ons artefact op 2 manieren geëvalueerd. Het doel is om te beoordelen of het artefact 
+                voldoet aan de gestelde requirements en om de UX van de app bij de gebruikers te beoordelen. De 
+                scope is gericht op het bepalen van de voortgang van het product en het verkrijgen van waardevolle 
+                feedback van de gebruikers. <br><br>
+                Voor het testen van de requirements hebben we gebruik gemaakt van een tabel waarin elke stap wordt 
+                vastgelegd, samen met het verwachte resultaat en het daadwerkelijke resultaat. <br><br>
+                Voor de UX testing hebben we meerdere gebruikers getest en hebben we de “Think a Loud” methode 
+                gehanteerd. Hierbij gaan gebruikers taken uitvoeren en wordt er hardop nagedacht. Wij observeren dit 
+                gedrag en verzamelen de feedback</p>
+            <h2>Test resultaten</h2>
+            <p>Sommige testen zijn gefaald, omdat we besloten hebben om deze functionaliteiten niet te gaan  implementeren. Van de 16 requirements testen die we hebben gedaan. Zijn er 8 succesvol afgerond. 
+                Sommige requirements zijn geprioriteerd als een must dus we zullen ernaar streven om dit nog aan te 
+                passen: <br><br>
+                • F02.1: Gebruikers moeten in staat zijn hun profielfoto te veranderen <br>
+                • F07: De organisator van het etentje kan aanvragen om deel te nemen accepteren of afwijzen <br>
+                • F10: De app laat gasten toe om onderling te chatten <br>
+                • F13: Gebruikers kunnen gebruik maken van de swipe functionaliteit om naar etentjes te zoeken. <br>
+                • F16: De app moet wachtwoorden d.m.v. hashfunctie opslaan in de database. <br>
+                De belangrijkste functionaliteit is de F10. Gebruikers moeten met elkaar kunnen communiceren om zo 
+                de details af te handelen van het etentje. <br><br>
+                Van de UX testing hebben we veel feedback ontvangen.
+                Vanuit meerdere personen hebben we nuttige feedback gekregen. Zo gaan we ons best doen om zo veel 
+                mogelijk feedback te verwerken. De meeste feedback van deze lijst is al aangepast. Enkel nog sommige 
+                belangrijke functies in onze app toevoegen en dan kan er weer opnieuw worden getest.</p>
+        </div>  
+        <div class="discussie" id="discussie">
+<h2>Discussie</h2>
+<p>   Er zijn nog een aantal onderdelen waar het van belang zou zijn als deze in de nabije toekomst nog 
+    worden geïmplementeerd. Het gaat hier deels om Quality of Life (QoL) functies, maar ook om 
+    beveiliging en moderatie. Het is essentieel dat hiernaar gekeken wordt voordat het product op grotere 
+    schaal wordt ingezet. <br><br>
+    Zo moet de chat functie nog worden geïmplementeerd, dit is noodzakelijk voor het goed laten verlopen 
+    van de app. Gebruikers kunnen hiermee intern op een veilige manier met elkaar communiceren, 
+    voorafgaand het etentje. Veel mensen zullen niet wensen dat zij gelijk telefoonnummers moeten 
+    uitdelen met vreemden. De ingebouwde chat-functie is daarom een goede manier voor de gebruikers 
+    om voorzichtig kennis met elkaar te maken in een beveiligde omgeving. <br><br>
+    Ook moet er meer aandacht worden besteed aan veiligheid. Bepaalde veiligheidsfeatures moeten nog 
+    worden geïmplementeerd, zoals het beter valideren van inputvelden op schadevolle inhoud, niet alleen 
+    voor het systeem wat betreft onderwerpen zoals SQL injection, maar ook op gebied van moderatie, 
+    zoals chatfilters die haatvolle en beledigende berichten tegengaan. <br><br>
+    Verder was er nog een aspect waar we tegenaan liepen tijdens de ontwikkeling. Zo duurde het na het 
+    starten van het project nog enige tijd voordat het projectteam toegang ontving tot de Azure-omgeving 
+    van Zuyd. Dit heeft de ontwikkeling in haar vroege stadium licht belemmerd aangezien er extra tijd en 
+    resources moesten worden besteed aan het zelf uitzoeken van een manier om de applicatie tijdelijk te 
+    hosten. Zelfs na het uiteindelijk ontvangen van de Zuyd-omgeving, bleek het niet de moeite waard om 
+    nog te switchen i.v.m. tijdsbesparing. Hierdoor is de ontwikkeling ook licht belemmerd aangezien de 
+    eigen servers relatief beperkter waren wat betreft de prestaties.</p>
+         
+
+        </div>     
+            <div class="conclusie" id="conclusie">
+                <h2>Conclusie</h2>
+                <p>Het doel van dit project was om een softwareservice te ontwikkelen die schaalbaar is en mensen in staat 
+                    stelt om samen met vreemden te dineren, om zo nieuwe connecties te maken en eenzaamheid te 
+                    voorkomen of te verminderen. Met behulp van design thinking werd de doelgroep verkend en werden 
+                    ontwerpen gemaakt, daarna werden testen uitgevoerd en is feedback verwerkt in ons product. Binnen 
+                    een tijdsspan van 10 weken is het ons gelukt om een MVP op te zetten.
+                    Met verder ontwikkeling en verfijning heeft deze softwareservice het potentieel om een waardevol 
+                    platform te bieden voor individuen die nieuwe contacten willen maken en lekkere gerechten willen 
+                    eten.
+                    Op basis hiervan wordt onze aanbeveling om verder onderzoek te doen naar de verdere ontwikkeling 
+                    van de app, ook om meer informatie op te zoeken over hoe deze app gepromoot kan worden.</p>
+            </div>
+            <div class="referenties" id="Referenties">
+                <h2>Referenties</h2>
+                <p>Dit artikel is een verzameling tekst uit verschillende rapportages. Mocht u geïnteresseerd zijn in die verslagen dan stuur ik u ze graag op. Neem even contact met mij op via het contactformulier of een van mijn social media kanalen. :D</p>
+            </div>
+            <a class="btn" href="../projectpage">Ga terug</a>
+     
+    </div>
+ 
+  </body>
+</html>

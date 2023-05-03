@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./CSS/projectpageV1.1.css" />
+    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Projecten</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <div class="navbar">
+      <div class="logo">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Milan Krükel</a>
+      </div>
+      <ul class="links">
+        <li><a href="/home">Home</a></li>
+        <li class="hobbylinks">
+          <a href="./hobby">Hobby's x</a>
+
+          <ul class="hobbydropdown">
+            <li><a href="./photography">Fotografie</a></li>
+            <li><a href="/ukelele">Ukelele</a></li>
+            <li><a href="/piano">Piano</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+      </ul>
+
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="/home">Home</a></li>
+      <li>
+        <a class="dropdown_home_styling" href="./hobby">Hobby's</a>
+        <ul class="hobbydropdownsmall">
+          <li><a href="./photography">Fotografie</a></li>
+          <li><a href="/ukelele">Ukelele</a></li>
+          <li><a href="/piano">Piano</a></li>
+        </ul>
+      </li>
+      <li><a href="/projectpage">Projecten</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+    </div>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropdown_menu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropdown_menu.classList.toggle("open");
+        const isopen = dropdown_menu.classList.contains("open");
+        toggleBtnIcon.classList = isopen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+    <!--Navbar ENDS-->
+    <div class="front">
+      <h1 class="titel1">Projecten</h1>
+      <div class="tekst">
+        <p>
+          Welkom op mijn projectpagina. Ik werk zowel voor school als voor
+          mezelf aan projecten. Het doel is om mijn opgedane kennis van school
+          in de praktijk toe te passen en daarnaast werk ik aan hobbyprojecten
+          om meer kennis op te doen over IT infrastructure/security. Het
+          documenteren van deze projecten vind ik leuk, omdat ik op die manier
+          mijn vooruitgang kan zien.
+        </p>
+      </div>
+      <hr />
+
+      <div class="content clearfix">
+        <!--main content-->
+        <div class="main-content">
+          <div id="3" class="post">
+            <img
+              src="/Img/projecten/project3/logoapp.jpg"
+              alt=""
+              class="post-image"
+            />
+            <div class="post-preview">
+              <h2>
+                <a href="/projecten/project3/">Casusproject BD07</a>
+              </h2>
+              <i class="far fa-user use"><h5>Milan Krükel</h5></i>
+              &nbsp;
+              <i class="far fa-calendar cal"><h5>17-04-23</h5></i>
+              <p class="preview-text">
+                In het vak software defined services hebben we de afgelopen 10
+                weken een startup gesimuleerd en een app gerealiseerd.
+              </p>
+              <a class="btn read-more" href="/projecten/project2">Lees meer</a>
+            </div>
+          </div>
+          <div id="2" class="post">
+            <img
+              src="./Img/projecten/project2/2023-03-08 15_32_36-nav bar.png"
+              alt=""
+              class="post-image"
+            />
+            <div class="post-preview">
+              <h2>
+                <a href="/projecten/project2">De Bouw van de website!</a>
+              </h2>
+              <i class="far fa-user use"><h5>Milan Krükel</h5></i>
+              &nbsp;
+              <i class="far fa-calendar cal"><h5>30-03-23</h5></i>
+              <p class="preview-text">
+                Ik ben begonnen met make van mijn eigen website, waar ben ik
+                allemaal tegen aangelopen? en wat heb ik geleerd?
+              </p>
+              <a class="btn read-more" href="/projecten/project2">Lees meer</a>
+            </div>
+          </div>
+
+          <div id="1" class="post">
+            <img
+              src="./Img/projecten/project1/1.jpg"
+              alt=""
+              class="post-image"
+            />
+            <div class="post-preview">
+              <h2>
+                <a href="./projecten/project1"
+                  >De Initïele opzet van de linux server</a
+                >
+              </h2>
+              <i class="far fa-user use"><h5>Milan Krükel</h5></i>
+              &nbsp;
+              <i class="far fa-calendar cal"><h5>11-03-23</h5></i>
+              <p class="preview-text">
+                Ik ben begonnen met het verkennen van Linux, omdat ik weet hoe
+                krachtig dit besturingssysteem is. Dus waarom zou ik er niet
+                zelf mee spelen?
+              </p>
+              <a class="btn read-more" href="./projecten/project1">Lees meer</a>
+            </div>
+          </div>
+          <!--main content-->
+        </div>
+        <!--<div class="sidebar">
+        <div class="section_search">
+          <h2 class="section-title">search</h2>
+          <form action="projectpage" method="post">
+            <input
+              type="text"
+              name="search-term"
+              class="text-input"
+              placeholder="Search..."
+            />
+          </form>
+        </div>
+
+        <div class="section topics">
+          <h2 class="section-title">Topics</h2>
+          <ul>
+            <li><a href="">Post1</a></li>
+            <li><a href="">Post2</a></li>
+            <li><a href="">Post3</a></li>
+            <li><a href="">Post4</a></li>
+          </ul>
+        </div>
+      </div>-->
+      </div>
+    </div>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <ul class="social_icons">
+        <li>
+          <a href="https://www.instagram.com/milankrukel/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/milan.krukel/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/milan-kr%C3%BCkel-331018213/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@Longboardingdude3956"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+      </ul>
+
+      <ul class="linksfooter">
+        <li><a href="./home">Home</a></li>
+        <li><a href="./hobby">Hobby's</a></li>
+        <li><a href="./projectpage">Projecten</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://formsubmit.co/el/guniye">Contact</a></li>
+      </ul>
+      <p>2023 | Milan Krükel all rights Reserved</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
