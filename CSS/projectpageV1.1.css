@@ -165,6 +165,7 @@ hr {
 }
 
 .front{
+   overflow: hidden
     z-index: 10;
     height: 900px;
     background: rgba(33, 20, 5, 0.5);
@@ -367,7 +368,7 @@ h1{
     
     footer{
         position:relative;
-        bottom: 0px;
+        bottom: -100px;
         left: 0;
         right: 0;
         width: 100%;
