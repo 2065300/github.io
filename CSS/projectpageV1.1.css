@@ -165,7 +165,7 @@ hr {
 }
 
 .front{
-   overflow: hidden
+   overflow: auto;
     z-index: 10;
     height: 900px;
     background: rgba(33, 20, 5, 0.5);
