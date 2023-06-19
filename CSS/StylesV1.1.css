@@ -322,6 +322,10 @@ ul li ul.hobbydropdown {
     .post-slider .prev {
         left: -7px !important;
     }
+     .post iframe {
+        max-height: 90px !important;
+        max-width: 110px;
+    }
 
     .post-slider .next {
         right: -9px !important;
